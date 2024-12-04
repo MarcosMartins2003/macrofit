@@ -65,7 +65,7 @@ function processResults() {
     console.log('Dados atualizados com sucesso:', data);
 
     // Redireciona o usuário para a página de resultados
-    window.location.href = '/results.html';
+    window.location.href = './results.html';
 
     // Atualiza os elementos da página atual (caso necessário) com os resultados
     document.getElementById('get-result').innerText = data.get + ' KCAL';
