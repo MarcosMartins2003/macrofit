@@ -1,0 +1,90 @@
+:root {
+  --background-color: #FBFBFB;
+  --text-color: #242424;
+  --primary:#00916E;
+  --gray:#D7D7D7;
+  --secondary:#F5B700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 3.75em;
+  background-color: var(--primary);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.background-primary {
+  background-color: var(--primary);
+}
+.bottom-selected-sidebar-curve {
+  background-color: #00916E; 
+  border-top-right-radius: 32px; 
+  width: 100%; 
+  height: 1.5rem; 
+}
+.top-selected-sidebar-curve {
+  background-color: #00916E; 
+  border-bottom-right-radius: 32px; 
+  width: 100%; 
+  height: 1.5rem; 
+}
+
+
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.background-white {
+  color:var(--background-color)
+}
+
+.sidebar-navigation-options {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 4.5em;
+  gap: 1.5em;
+  width: 100%;
+}
+
+.sidebar-selected-option-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.sidebar-item{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border-start-start-radius: 1.5em;
+}
+
+.text-sidebar-item {
+  font-size: 1.5em;
+  color: white;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 19.375em;
+}
+
+.selected-sidebar-item{
+  color: var(--primary);
+}

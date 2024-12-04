@@ -1,0 +1,144 @@
+:root {
+  --background-color: #FBFBFB;
+  --text-color: #242424;
+  --primary:#00916E;
+  --gray:#D7D7D7;
+  --secondary:#F5B700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  outline: none;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5em;
+  padding: 1em 0.75em;
+  background-color: var(--primary);
+  color: var(--background-color);
+}
+
+.form-title-container, .form-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  flex: 1;
+}
+
+.icons {
+  width: 1.5em;
+  aspect-ratio: 1 / 1;
+}
+
+.form-container > form {
+  display: flex;
+  max-width: 30em;
+  min-width: 25em;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.logo-container {
+  width: 65%;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.title-style {
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.input-container {
+padding: 1em 0.75em;
+border-radius: 0.5em;
+display: flex;
+flex-direction: row;
+gap: 1em;
+border: solid 0.0625em var(--gray);
+}
+
+.input, .input::placeholder {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: var(--gray);
+}
+
+
+@media (max-width:1440px) {
+  .logo_image {
+    width: 500px;
+  }
+}
+
+@media (max-width:1024px) {
+  .logo_image {
+    width: 350px;
+  }
+}
+
+@media (max-width:910px) {
+  .logo-container {
+    width: 15%;
+  }
+  .logo_image {
+    visibility: hidden;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+  
+  .form-container > form {
+    max-width: none;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+
+@media (max-width:450px) {
+  .logo-container {
+    width: 0;
+  }
+
+}

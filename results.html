@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/globals.css" />
+  <link rel="stylesheet" href="style/profile.css" />
+  <link rel="stylesheet" href="style/results.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="new-content">
+      <div class="content-container">
+
+        <div class="left-side-container">
+
+          <div class="tax-container">
+            <div class="get-and-tmb-container">
+              <div class="tax">
+                <h3 class="anton-sc-regular text-dark-gray">GET</h3>
+                <span class="bg-primary anton-sc-regular" id="get-result">
+                  2340 KCAL
+                </span>
+              </div>
+              <div class="tax">
+                <h3 class="anton-sc-regular  text-dark-gray">TMB</h3>
+                <span class="bg-secondary anton-sc-regular text-dark-gray" id="tmb-result">
+                  2340 KCAL
+                </span>
+              </div>
+            </div>
+
+            <div class="tax">
+              <h3 class="anton-sc-regular text-dark-gray">IMC</h3>
+              <div class="imc-container">
+                <div style="display: flex; align-items: center; flex-direction: column; gap: 0.5rem;">
+
+                  <p class="anton-sc-regular text-dark-gray" id="imc-result">24,5</p>
+                  <p class="anton-sc-regular text-dark-gray">Peso normal</p>
+                </div>
+                <div class="gradient-bar"></div>
+                <!-- <div style="height: 1.25rem; width: 100%;">
+
+                </div> -->
+              </div>
+            </div>
+
+          </div>
+          <div class="hydration">
+            <h2 class="anton-sc-regular title">Hidratação Ideal</h2>
+            <div style="display: flex; gap: 2rem;">
+              <div style="display: flex; gap: 0.5rem;">
+                <img src="./img/water-bottle.svg" style="height: 1.5rem; width: 1.5rem;">
+                <img src="./img/water-bottle.svg" style="height: 1.5rem; width: 1.5rem;">
+                <img src="./img/water-bottle.svg" style="height: 1.5rem; width: 1.5rem;">
+                <img src="./img/water-bottle.svg" style="height: 1.5rem; width: 1.5rem;">
+                <img src="./img/water-bottle.svg" style="height: 1.5rem; width: 1.5rem;">
+                <img src="./img/water-bottle.svg" style="height: 1.5rem; width: 1.5rem;">
+
+              </div>
+              <p style="font-size: 1.5rem; opacity: 0.7; color: var(--text-color);" id="counterWater" class="anton-sc-regular">3L</p>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 2rem;">
+            <h2 class="anton-sc-regular title">Recomendações</h2>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <details class="accordion">
+                <summary class="anton-sc-regular tax-content" style="display: flex; gap: 1rem;">
+                  <img src="./img/lucide-bike.svg" alt="">
+                  ATIVIDADES FÍSICAS
+                </summary>
+                <p class="inter-regular"
+                  style="color: var(--text-color); font-size: 14px; opacity: 0.7; padding-top: 0.75rem;">Para um estilo de vida saudável, é essencial combinar diferentes tipos de atividades físicas. Pratique exercícios aeróbicos, como caminhada ou corrida, para melhorar a saúde cardiovascular. Adicione musculação ou treinamento funcional para aumentar a força e a massa muscular. Inclua atividades de flexibilidade, como yoga ou alongamentos, para prevenir lesões. Experimente também o HIIT para queimar gordura e melhorar o condicionamento em pouco tempo. Não se esqueça de atividades que promovem o bem-estar mental, como meditação e caminhadas ao ar livre. Lembre-se de ser consistente, aumentar a intensidade gradualmente e manter-se hidratado.</p>
+              </details>
+              <details class="accordion">
+                <summary class="anton-sc-regular tax-content" style="display: flex; gap: 1rem;">
+                  <img src="./img/lucide-carrot.svg" alt="">
+                  ALIMENTAÇÃO
+                </summary>
+                <p class="inter-regular"
+                  style="color: var(--text-color); font-size: 14px; opacity: 0.7; padding-top: 0.75rem;">Para uma alimentação saudável, foque em uma dieta equilibrada, rica em nutrientes essenciais. Consuma uma variedade de frutas e vegetais para garantir vitaminas e fibras. Inclua fontes de proteína magra, como frango, peixe, ovos e leguminosas, para apoiar a recuperação muscular e a saúde geral. Escolha carboidratos integrais, como arroz integral e aveia, para energia sustentada. Evite alimentos processados e ricos em açúcar, optando por gorduras saudáveis, como as encontradas em abacates, nozes e azeite de oliva. Beba bastante água, e mantenha um equilíbrio entre as porções, respeitando suas necessidades energéticas.</p>
+              </details>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="aside-container">
+          <div class="aside-info-container">
+            <h2 class="aside-title anton-sc-regular">GET</h2>
+            <p class="aside-text inter-regular">O GET (Gasto Energético Total) é a quantidade de energia que o corpo usa em um dia, incluindo o metabolismo basal (TMB), a energia gasta na digestão dos alimentos (TEF) e a energia consumida durante atividades físicas. Calcular o GET é essencial para ajustar a ingestão calórica, ajudando a atingir objetivos como perder, manter ou ganhar peso de forma saudável.</p>
+          </div>
+          <span class="aside-divider"></span>
+          <div class="aside-info-container">
+            <h2 class="aside-title anton-sc-regular">TMB</h2>
+            <p class="aside-text inter-regular">A Taxa de Metabolismo Basal (TMB) é a quantidade de energia que o corpo gasta para manter suas funções vitais em repouso, como respirar, circular o sangue e regular a temperatura corporal. A TMB representa a energia mínima necessária para o funcionamento básico do organismo e é influenciada por fatores como idade, sexo, peso e composição corporal. Esse valor é fundamental para calcular o Gasto Energético Total (GET) e determinar as necessidades calóricas diárias de uma pessoa.</p>
+          </div>
+          <span class="aside-divider"></span>
+          <div class="aside-info-container">
+            <h2 class="aside-title anton-sc-regular">IMC</h2>
+            <p class="aside-text inter-regular">
+              O Índice de Massa Corporal (IMC) é uma medida usada para avaliar se uma pessoa está com o peso adequado em relação à sua altura. Ele é calculado dividindo o peso pela altura ao quadrado. O IMC é uma ferramenta simples e comum para identificar se alguém está dentro de um peso saudável.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="nav-bar">
+      <div class="nav-bar-pages">
+        <div class="nav-home-container">
+          <div class="nav-home" onclick="window.location = './index.html'">
+            <img class = "mini-logo" src="img/logo-mini.svg" alt="">
+            <img class="full-logo expanded-nav-bar" src="img/macrofit-high-resolution-logo-1.png" alt="">
+
+          </div>
+        </div>
+        <div class="nav-profile-container nav-bar-containers">
+          <div class="nav-profile nav-item" onclick=" window.location = './profile.html' ">
+            <img class="dark-profile-icon" src="img/icons-profile-dark.svg" alt="">
+            <img class="highlighted-profile-icon" src="img/icons-profile.svg" alt="">
+            <p class="expanded-nav-bar anton-sc-regular">PERFIL</p>
+          </div>
+        </div>
+        <div class="nav-results-container nav-bar-containers" >
+          <div class="nav-results nav-item">
+            <img src="img/icons-results-highlighted.svg" alt="">
+            <p class="expanded-nav-bar anton-sc-regular">RESULTADOS</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bar-exit nav-bar-containers" onclick="window.location = './login.html'">
+        <div class="nav-exit nav-item">
+          <img src="img/icons-exit.svg" alt="">
+          <p class="expanded-nav-bar anton-sc-regular">Sair</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+<script src="./script/firebase.js"></script>
+<script src="./script/loginAuth.js"></script>
+<script src="./script/porcessInfo.js"></script>
+<script src="./script/results.js"></script>
+</body>
+
+
+</html>

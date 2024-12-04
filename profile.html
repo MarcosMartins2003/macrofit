@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/globals.css" />
+    <link rel="stylesheet" href="style/profile.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+          
+            <div class="gender-container mobile-2 tablet-2 desktop">
+                <p class="gender-title anton-sc-regular">
+                    Gênero
+                </p>
+
+
+
+                <div class="gender-cards">
+                    <div class="gender-card-container" onclick="selectGender(this)" >
+                        <img class="gender-card" src="img/img-male.svg" data-selected-src="img/img-male-selected.svg" />
+                    </div>
+                    <div class="gender-card-container" onclick="selectGender(this)" >
+                        <img class="gender-card" src="img/img-female.svg" data-selected-src="img/img-female-selected.svg" />
+                    </div>
+                </div>
+            </div>
+            <div class="measures-container mobile-2 tablet-1 desktop">
+                <div class="height-container">
+                    <p class="height-title anton-sc-regular">
+                        Altura
+                    </p>
+                    <div class="height-cards">
+                        <div class="measure-button"><img class="measure-button-img height-decrease-btn" onclick="changeHeight(-1)" src="img/icons-minus.svg" style="cursor: pointer;" /></div>
+                        <p class="anton-sc-regular" id="height-display">183cm</p>
+                        <div class="measure-button"><img class="measure-button-img height-increase-btn" onclick="changeHeight(1)" src="img/icons-plus.svg" style="cursor: pointer;" /></div>
+                    </div>
+                </div>
+                <div class="weight-container">
+                    <p class="weight-title anton-sc-regular">
+                        Peso
+                    </p>
+                    <div class="weight-cards">
+                        <div class="measure-button" ><img class="measure-button-img weight-decrease-btn" onclick="changeWeight(-1)" src="img/icons-minus.svg"  style="cursor: pointer;"/></div>
+                        <p id="weight-display" class="anton-sc-regular">75kg</p>
+                        <div class="measure-button"><img class="measure-button-img weight-increase-btn" onclick="changeWeight(1)" src="img/icons-plus.svg"   style="cursor: pointer;"/></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end second page on mobile -->
+            <!-- third page on mobile -->
+            <div class="physical-activity mobile-3 tablet-2 desktop">
+                <p class="physical-activity-title anton-sc-regular">Atividade Física</p>
+                <div class="physical-activity-cards">
+                    <div class="physical-activity-card" onclick="selectCard(this)" 
+                    onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)">
+                        <div class="card-header">
+                            <!-- <img src="./img/icons-check.svg" alt=""> -->
+                            <img src="./img/icons-check.svg" alt="">
+                            <p class="card-title anton-sc-regular">Muito ativo</p>
+                        </div>
+                        <p class="card-text inter-semibold">Você faz exercício quase todos os dias e adora fazer isso!</p>
+                    </div>
+                    <div class="physical-activity-card" onclick="selectCard(this)" 
+                    onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)" >
+                        <div class="card-header">
+                            <img class="card-img" src="./img/icons-check.svg" alt="">
+                            <p class="card-title anton-sc-regular">Ativo</p>
+                        </div>
+                        <p class="card-text inter-semibold">Você faz exercício quase todos os dias e adora fazer isso!</p>
+                    </div>
+                    <div class="physical-activity-card" onclick="selectCard(this)" 
+                    onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)" >
+                        <div class="card-header">
+                            <img class="card-img" src="./img/icons-check.svg" alt="">
+                            <p class="card-title anton-sc-regular">Normal</p>
+                        </div>
+                        <p class="card-text inter-semibold">Você quase nunca faz exercícios e não leva jeito para a coisa!</p>
+                    </div>
+                    <div class="physical-activity-card" onclick="selectCard(this)" 
+                    onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)" >
+                        <div class="card-header">
+                            <img class="card-img" src="./img/icons-check.svg" alt="">
+                            <p class="card-title anton-sc-regular">Sedentário</p>
+                        </div>
+                        <p class="card-text inter-semibold">Você quase nunca faz exercícios e não leva jeito para a coisa!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end third page on mobile -->
+             <div class="next-page-div">
+                <div class="generate-results-container desktop">
+                    <p class="generate-results-title anton-sc-regular">Gerar resultados</p>
+                    <p class="generate-results-text inter-semibold">
+                        Confirme suas informações e clique no botão abaixo para que possamos te ajudar a ter uma vida mais saudável e consciente.
+                    </p>
+                </div>
+                 <button class="next-page-btn inter-semibold" onclick="nextPage()" >Avançar <img src="img/icons-profile.svg" alt=""></button>
+                 <button class="generate-btn inter-semibold mobile-3 tablet-2 desktop"  onclick="processResults()">Gerar resultados<img src="img/icons-profile.svg" alt=""></button>
+
+             </div>
+            <!-- <button class="next-page-btn inter-semibold">Gerar Resultados <img src="img/icons-profile.svg" alt=""></button> -->
+        </div>
+        <div class="nav-bar">
+            <div class="nav-bar-pages">
+                <div class="nav-home-container">
+                    <div class="nav-home" onclick="window.location='./index.html'">
+                        <img class="mini-logo" src="img/logo-mini.svg" alt="">
+                        <img class="full-logo expanded-nav-bar" src="img/macrofit-high-resolution-logo-1.png" alt="">
+                        
+                    </div>
+                </div>
+                <div class="nav-profile-container nav-bar-containers">
+                    <div class="nav-profile nav-item">
+                        <img class="dark-profile-icon" src="img/icons-profile-dark.svg" alt="">
+                        <img class="highlighted-profile-icon" src="img/icons-profile-highlighted.svg" alt="">
+                        <p class="expanded-nav-bar anton-sc-regular">PERFIL</p>
+                    </div>
+                </div>
+                <div class="nav-results-container nav-bar-containers" onclick="window.location = './results.html'">
+                    <div class="nav-results nav-item">
+                        <img src="img/icons-results.svg" alt="">
+                        <p class="expanded-nav-bar anton-sc-regular">RESULTADOS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-bar-exit nav-bar-containers" onclick="window.location = './login.html'">
+                <div class="nav-exit nav-item">
+                    <img src="img/icons-exit.svg" alt="">
+                    <p class="expanded-nav-bar anton-sc-regular">Sair</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script/new-profile.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+    <script src="./script/loginAuth.js"></script>
+    <script src="./script/firebase.js"></script>
+    <script src="./script/porcessInfo.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacroFit</title>
+    <link rel="stylesheet" href="style/login.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="container">
+    <div class="logo-container">
+      <img class="logo_image" src="img/group.png" />
+    </div>
+    <div class="form-container">
+      <form  id = 'loginForm' action="">
+        <div class="form-title-container">
+          <h1 class="anton-sc-regular title-style">Login</h1>
+          <p class="inter-medium">Seja bem vindo novamente ao MacroFit, informe seu email e senha para entrar!</p>
+        </div>
+        <div class="form-input-container">
+          <div class="input-container">
+            <img class="icons" src="img/icons-4.svg" />
+            <input  id='emailLogin' class="input inter-semibold" placeholder="Ex. username@gmail.com" type="text" />
+          </div>
+          <div class="input-container">
+            <img class="icons" src="img/password.svg" />
+            <input id="passwordLogin" class="input inter-semibold" placeholder="Ex. secretpass123@" type="password" />
+          </div>
+        </div>
+        <button  id ='submitLoginForm' class="button inter-semibold" type="submit" >Entrar</button>
+      </form>
+      <div>
+
+      </div>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+
+  <script src="./script/firebase.js"></script> <!-- Inicializa o Firebase -->
+  <script src="./script/loginAuth.js"></script> <!-- Usa o Firebase -->
+  </html>

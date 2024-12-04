@@ -1,0 +1,132 @@
+.main {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+}
+
+.register-form-container {
+    min-height: 100%;
+    min-width: 35%;
+    max-width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form {
+    padding: 0 10%;
+    width: 100%;
+    height: 40%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.register-form-header {
+    height: 104px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form-header-title {
+    font: 400;
+    font-size: 32px;
+}
+
+.register-form-header-text {
+    font-size: 16px;
+}
+
+.register-form-inputs {
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.input-container {
+    width: 100%;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    height: 48px;
+    gap: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    height: 16px;
+    width: 16px;
+}
+
+.input {
+    border: none;
+    size: 16px;
+    width: 90%;
+    color: var(--gray);
+    font-size: 16px;
+    outline: none;
+}
+
+.register-button {
+    min-height: 40px;
+    height: 56px;
+    background-color: var(--primary);
+    color: var(--background-color);
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.hero-container {
+    min-height: 100%;
+    max-width: 65%;
+    min-width: 65%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{}
+
+@media (max-width:1440px) {
+    /* .logo{
+        width: 520px;
+        height: 200px;
+    } */
+    .logo{
+        width: 400px;
+        height: 160px;
+    }
+}
+
+@media (max-width:1024px) {
+    .logo{
+        width: 0px;
+        height: 0px;
+    }
+    .hero-container{
+        max-width: 15%;
+        min-width: 15%;
+    }
+    .register-form-container{
+        max-width: 90%;
+        min-width: 90%;
+    }
+}
+
+@media (max-width:768px) {
+    .hero-container{
+        display: none;
+    }
+    .register-form-container{
+        max-width: 100%;
+        min-width: 100%;
+    }
+}

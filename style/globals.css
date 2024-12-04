@@ -1,0 +1,64 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Anton+SC:400,var(--ANTON-SC-32-font-weight)|Inter:var(--inter-16-600-font-weight),var(--inter-20-600-font-weight)");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #FBFBFB;
+  --text-color: #242424;
+  --primary:#00916E;
+  --gray:#D7D7D7;
+  --secondary:#F5B700;
+}
+
+/* ################################### */
+
+:root {
+  --background-color: #FBFBFB;
+  --text-color: #242424;
+  --primary:#00916E;
+  --gray:#D7D7D7;
+  --secondary:#F5B700;
+}
+ 
+ 
+body.dark-mode {
+  --background-color: #1e1e1e;
+  --text-color: #f5f5f5;
+}
+ 
+ 
+/* @media (max-width:500px) {
+  .container {
+    display: block;
+  }
+} */
+ 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* typografy */
+
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ 
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
